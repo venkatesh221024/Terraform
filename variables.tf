@@ -1,9 +1,9 @@
 variable "filename" {
-    default = "file1.txt"
+    default = "file2.txt"
    type = string 
 }
 variable "content" {
-default = "Hi chanti this is variable task"
+default = "Hi chanti this is variable task44"
 type = string
 }
 variable "prefix" {

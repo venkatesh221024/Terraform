@@ -4,7 +4,7 @@ resource "local_file" "mypet" {
 }
 
 
-resource "random_pet" "mypet23" {
+resource "random_pet" "mypet234" {
 prefix = var.prefix
 separator = var.separator
 length = var.length

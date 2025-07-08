@@ -1,12 +1,12 @@
 resource "local_file" "mypet" {
-  filename = "terraform pets.txt"
-  content  = "i hate pets"
+  filename = var.filename
+  content  = var.content
 }
 
 
 resource "random_pet" "mypet23" {
-prefix = "prefix"
-separator = "."
-length = "1"
+prefix = var.prefix
+separator = var.separator
+length = var.length
 }
 

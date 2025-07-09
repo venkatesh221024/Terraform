@@ -1,12 +1,11 @@
-resource "local_file" "mypet" {
-  filename = var.filename
-  content  = var.content
+provider "aws" {
+  region = "us-east-1"
 }
 
-
-resource "random_pet" "mypet23" {
-  prefix   = var.prefix
-  length   = var.length
-  
+resource "aws_instance" "example" {
+  ami           = "ami-05ffe3c48a9991133" # Replace with a valid AMI
+  instance_type = "t2.micro"
+  tags = {
+    Name = "TerraformJenkinsExample"
+  }
 }
-

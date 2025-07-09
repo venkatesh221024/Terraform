@@ -1,16 +1,16 @@
 variable "filename" {
-  default = "pets.txt"
-  type    = string
+    default = "test2.txt"
+    type = string 
 }
 variable "content" {
-  default = "This is pets information with ariables"
-  type    = string
+  default = "this is a test default variables"
+  type = string
 }
 variable "prefix" {
-  default = "mrs"
-  type    = string
+  default = "mr"
+  type = string
 }
 variable "length" {
-  default = "12"
-  type    = number
+  default = 2
+  type = number
 }
